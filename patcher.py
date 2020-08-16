@@ -73,6 +73,7 @@ if (type == '1'):
     # apply AM2R.bps
     # subprocess.call(['utilities/floating/./flips-linux', '-a', 'patch_data/AM2R.bps', output+'/AM2R.exe', output+'/AM2R'])
     subprocess.call(['xdelta3', '-dfs', output+'/AM2R.exe', 'patch_data/AM2R.xdelta', output+'/AM2R'])
+    subprocess.call(['chmod', '+x', output+'/AM2R'])
 
     print("\nApplying data patch...")
     # apply game.unx patch
